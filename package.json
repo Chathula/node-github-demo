@@ -1,0 +1,26 @@
+{
+  "name": "node-github-demo",
+  "version": "1.0.0",
+  "description": "CI/CD NodeJs App using Github Actions",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chathula/node-github-demo.git"
+  },
+  "author": "Chathula Sampath <schathula@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Chathula/node-github-demo/issues"
+  },
+  "homepage": "https://github.com/Chathula/node-github-demo#readme",
+  "scripts": {
+    "test": "mocha ./test/* --exit"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "mocha": "^7.0.1",
+    "supertest": "^4.0.2"
+  }
+}
