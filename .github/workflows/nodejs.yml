@@ -1,6 +1,6 @@
 name: Node Github CI
 
-on: 
+on:
   push:
     branches:
       - master
@@ -20,18 +20,18 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - name: npm install, build, and test
+    - name: npm install and test
       run: |
         npm install
         npm test
       env:
         CI: true
-  
+
   deploy:
     needs: [build]
     runs-on: ubuntu-latest
 
-    steps:      
+    steps:
     - name: SSH and deploy node app
       uses: appleboy/ssh-action@master
       with:
